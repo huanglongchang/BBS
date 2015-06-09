@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts2_login" extends="struts-default"
+		namespace="/">
+
+		<action name="checkLogin" class="userCheck" method="login">
+			<result name="success">/index.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+
+		<action name="addUser" class="userCheck" method="addUser">
+			<result name="success">/index.jsp</result>
+			<result name="input">/regist.jsp</result>
+		</action>
+		<action name="getUserByName" class="userCheck" method="getUserByName">
+
+		</action>
+		<action name="upDatePassword" class="userCheck" method="upDatePassword">
+			<result name="success">/index.jsp</result>
+			<result name="input">/updatePassword.jsp</result>
+		</action>
+		<action name="getAllMeAction" class="message" method="selectAllList">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="deleteMessage" class="message" method="deleteMessage">
+			<result name="success">/showMyMessage.jsp</result>
+		</action>
+
+		<action name="addMessageAction" class="message" method="addMessage">
+			<result name="success">/index.jsp</result>
+		</action>
+
+
+		<action name="selectMessageById" class="message" method="selectMessageById">
+		</action>
+		
+		<action name="addPost" class="post" method="addPost">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="selectAllPost" class="post" method="selectAllPost">
+			<result name="success">/index.jsp</result>
+		</action>
+
+	</package>
+
+</struts>    
