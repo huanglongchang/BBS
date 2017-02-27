@@ -82,7 +82,7 @@ System.out.println(name);
 	<tr><br><br></tr>
 	<tr>
 		<td style="font-size:12px;">
-		内容：
+		  内容：
 		</td>
 		<td style="font-size:12px;">
 	<textarea  name="content" id="content" style="width: 472px; height: 148px"></textarea> 
